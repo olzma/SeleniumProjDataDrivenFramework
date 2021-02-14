@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" ignored="0" total="2" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="47576" started-at="2021-01-30T13:44:18 EET" finished-at="2021-01-30T13:45:06 EET">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="47576" started-at="2021-01-30T13:44:18 EET" finished-at="2021-01-30T13:45:06 EET">
+      <class name="dfPack.test.LoginTest">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:dfPack.test.LoginTest@17579e0f]" name="initialize" is-config="true" duration-ms="19" started-at="2021-01-30T13:44:18 EET" finished-at="2021-01-30T13:44:18 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="FAIL" signature="siteLogin(java.util.HashMap)[pri:0, instance:dfPack.test.LoginTest@17579e0f]" name="siteLogin" duration-ms="23942" started-at="2021-01-30T13:44:19 EET" data-provider="getData" finished-at="2021-01-30T13:44:43 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Runmode=Y, ExpectedResult=Success, Username=seleniumbyarun99@gmail.com, Browser=Firefox, Password=Demopassword$}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[PasswordTextBox_idholding the value pwd is not on the web page to be reached]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: PasswordTextBox_idholding the value pwd is not on the web page to be reached
+at org.junit.Assert.fail(Assert.java:88)
+at dfPack.base.BaseTest.reportFail(BaseTest.java:178)
+at dfPack.base.BaseTest.getElement(BaseTest.java:153)
+at dfPack.base.BaseTest.typeIt(BaseTest.java:113)
+at dfPack.base.BaseTest.doLogin(BaseTest.java:96)
+at dfPack.test.LoginTest.siteLogin(LoginTest.java:63)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- siteLogin -->
+        <test-method status="PASS" signature="testClosure()[pri:0, instance:dfPack.test.LoginTest@17579e0f]" name="testClosure" is-config="true" duration-ms="1316" started-at="2021-01-30T13:44:43 EET" finished-at="2021-01-30T13:44:44 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testClosure -->
+        <test-method status="FAIL" signature="siteLogin(java.util.HashMap)[pri:0, instance:dfPack.test.LoginTest@17579e0f]" name="siteLogin" duration-ms="20855" started-at="2021-01-30T13:44:44 EET" data-provider="getData" finished-at="2021-01-30T13:45:05 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Runmode=Y, ExpectedResult=Success, Username=seleniumbyarun99@gmail.com, Browser=Chrome, Password=Demopassword$}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[PasswordTextBox_idholding the value pwd is not on the web page to be reached]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: PasswordTextBox_idholding the value pwd is not on the web page to be reached
+at org.junit.Assert.fail(Assert.java:88)
+at dfPack.base.BaseTest.reportFail(BaseTest.java:178)
+at dfPack.base.BaseTest.getElement(BaseTest.java:153)
+at dfPack.base.BaseTest.typeIt(BaseTest.java:113)
+at dfPack.base.BaseTest.doLogin(BaseTest.java:96)
+at dfPack.test.LoginTest.siteLogin(LoginTest.java:63)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- siteLogin -->
+        <test-method status="PASS" signature="testClosure()[pri:0, instance:dfPack.test.LoginTest@17579e0f]" name="testClosure" is-config="true" duration-ms="789" started-at="2021-01-30T13:45:05 EET" finished-at="2021-01-30T13:45:06 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testClosure -->
+      </class> <!-- dfPack.test.LoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
